@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="utf-8"/>
+<title>HELP DESK</title>
+	<link rel="stylesheet" type="text/css" href="CSS/form.css"/>
+  <link href="css/estilo.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/menust.css" type="text/css" />
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	</head>
+
+<body>
+ <nav id="men">
+  <ul id="menu">
+        <li id="ini"><a href="index.html">INICIO</a></li>
+        <li><a href="index.html">AREAS DE SOPORTE</a>
+        <ul>
+        <li><a href="index.html">Soporte al Hardware</a></li>
+          <li><a href="index.html">Soporte al Sistema Operativo</a></li>
+           <li><a href="index.html">Soporte a Redes</a></li>
+           <li><a href="index.html">Soporte de Seguridad</a></li>
+           <li><a href="index.html">Soporte de Tareas del Usuario</a></li>
+           </ul>
+        </li>
+        <li><a href="lista.html">LISTA DE PROBLEMAS</a></li>
+        <li><a href="form1.html">CONTÁCTENOS</a></li>
+                 <li><a href="creadores.html">CREADORES</a>
+
+    </ul>
+    </nav>
+ <br>
+ <br>
+  <br>
+ <br>
+<div id="content">
+      <ul class="ppt">
+
+<form class="rwdform" action="?Page=form.php" method="post">
+
+
+  <div>
+
+    <div>
+    <label class="desc" id="title1" for="nombre">Nombre </label>
+    <div>
+      <input id="apellido" name="apellido" type="text" class="field text fn" value=""  tabindex="1" required pattern="^([a-zA-Z])*\s*([a-zA-Z])*">
+    </div>
+  </div>
+    <div>
+    <label class="desc" id="title1" for="nombre">Usuario</label>
+    <div>
+      <input id="apellido" name="apellido" type="text" class="field text fn" value=""  tabindex="1" required pattern="^([a-zA-Z])*\s*([a-zA-Z])*">
+    </div>
+  </div>
+    <div>
+    <label class="desc" id="title1" for="nombre">Direccion</label>
+    <div>
+      <input id="apellido" name="apellido" type="text" class="field text fn" value=""  tabindex="1" required pattern="^([a-zA-Z])*\s*([a-zA-Z])*">
+    </div>
+      </div>
+
+  <div>
+    <label class="desc" id="title2" for="phone">Telefono</label>
+    <div>
+      <input id="tel" name="tel" type="tel" class="field text fn" value="" size="8" tabindex="2"  required pattern="[0-9]{8}" >
+    </div>
+  </div>
+  <div>
+    <label class="desc" id="title3" for="email" >Email</label>
+    <div>
+      <input id="email" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3" required> 
+    </div>
+  </div>
+
+ 
+  <div>
+    <fieldset>
+      <p class="Estilo2">&iquest;Horario en que se puede encontrar al usuario?  <br>
+    <select name='horario' size='2' id="horario">
+      <option value="1">8:00 am A 11:00 am
+      <option value="2">12:00pm A 15:00pm
+      <option value="3">15:00pm A 17:00pm
+      <option value="4">17:00pm A 19:00pm
+      <option value="5">Todo el d&iacute;a
+    </select>
+  </p>
+  <p class="Estilo2">D&iacute;a en que se puede encontrar al usuario? <br>
+    <select name='dia' size='2' id="dia">
+      <option value="1">Lunes
+      <option value="2">Martes
+      <option value="3">Miercoles
+      <option value="4">Jueves
+      <option value="5">Viernes
+      <option value="6">Fin de semana
+    </select>
+</p>
+  <table width='100%' border='0' cellspacing='0' cellpadding='10'>
+<tr>
+<td width="36%" class="Estilo2"><strong>Ubicación física del equipo </strong><br>
+  <input type='radio' name='ubicacion' value='0'> 
+  El suelo 
+<br>
+<input type='radio' name='ubicacion' value='2' checked> 
+Mueble PC 
+<br>
+<input type='radio' name='ubicacion' value='4'> 
+Escritorio 
+<br>
+<input type='radio' name='ubicacion' value='6'>
+Mesa</td>
+<td width="64%" class="Estilo2"><strong>Tipo de problema  del equipo </strong><br>
+    <input type='radio' name='problema' value='0'>
+Software <br>
+<input type='radio' name='problema' value='2' checked>
+Hardware <br>
+<input type='radio' name='problema' value='4'>
+Redes <br>
+<input type='radio' name='problema' value='6'>
+Seguridad  </td>
+</tr>
+</table>
+  <p class="Estilo2">Descripción del problema <br>
+    <textarea name='descripcion' cols='40' rows='5' id="descripcion">Escriba aquí el problema...</textarea></p>
+    <br>
+    <br>
+observaciones
+<br>
+<textarea name='observacion' cols='40' rows='5' id="observacion">Escriba aquí su observacion...</textarea>
+</fieldset>
+          </div>
+    
+<div>
+  <input id="saveForm" name="saveForm" type="submit" value="Submit" />
+</div>
+</form>
+    </ul>
+
+
+     </div>
+     
+
+
+
+ 
+
+ 
+</body>
+</html>
+
